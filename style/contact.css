@@ -67,8 +67,12 @@ h6{
 }
 
 a{
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   color: white;
+  width: fit-content;
+  padding: 0 15px;
 }
 
 ul {
@@ -85,17 +89,16 @@ ul {
 ul > li {
   list-style-type: none;
   background-color: rgba(0,0,0,0.7);
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 16px;
-  padding: 0 20px;
+  padding: auto 40px;
+  width: fit-content;
+  height: fit-content;
 }
 
 ul > li > a {
-  width: 12vw;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  text-align: center;
+  width: fit-content;
+  height: 20px;
 }
 
 header > nav{
@@ -194,22 +197,22 @@ video {
     font-size: 14px; 
   }
   h1{
-    font-size: 2.4rem;
-  }
-  h2{
-    font-size: 2rem;
-  }
-  h3{
     font-size: 1.8rem;
   }
-  h4{
+  h2{
+    font-size: 1.6rem;
+  }
+  h3{
     font-size: 1.4rem;
   }
-  h5{
+  h4{
     font-size: 1.2rem;
   }
-  h6{
+  h5{
     font-size: 1rem;
+  }
+  h6{
+    font-size: 0.8rem;
   }
 
   .project-tile p {
@@ -224,4 +227,44 @@ video {
     text-align:center;
     font-size: 1.2rem;
   }
+
+  a{
+    width: fit-content;
+  }
+
+  .btn{
+    color:black;
+    margin: 0 20px;
+    padding: 4 12px;
+  }
+
+  .btn:hover{
+    background: var(--background-buttons);
+    animation: navigation 7s ease infinite;
+    border-radius: 20px;
+    background-size: 400% 400%;
+    padding: 4 12px;
+  }
+
+  #navbar > a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.4rem;
+  }
+
+  ul > li {
+    list-style-type: none;
+    background-color: rgba(0,0,0,0.7);
+    border: 0.6px solid white;
+    border-radius: 16px;
+    padding: auto 20px;
+    width: fit-content;
+    text-align: center;
+  }
+
+  span{
+    display:flex;
+    flex-wrap: nowrap;
+  }
+
 }
