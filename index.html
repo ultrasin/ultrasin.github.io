@@ -4,7 +4,7 @@
 <head>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@100&display=swap">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio</title>
@@ -14,30 +14,17 @@
 
 <body>
 
-<header>
+  <header>
+    <nav class="navigation-menu">
+      <a class="nav-button" href="survey.html" target="_blank">Survey</a>
+      <!--<a class="nav-button" href="landing.html" target="_blank">Landing</a>
+      <button class="nav-button"></button> 
+        TODO -->
+    </nav>
+  </header>
 
-  <nav id="navbar">
-    <!-- for navbar links
-      <li>
-        <h4><a href="#projects">Construction</a></h4>
-      </li>
-      <li>
-        <h4><a href="#contact">Contact Links</a></h4>
-      </li>
-    -->
-    <ul class="nav">
-      <li>
-          <a href="https://www.freecodecamp.org">
-            <h5>freecodecamp</h5>
-            <i class="fab fa-free-code-camp"></i>
-          </a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-  <section id="welcome-section" >
-      <div class="welcome-section">
+  <section id="welcome-section" class="welcome-section">
+      <div>
         <h1>Hello! My name is <em>Diego!</em></h1>
         <h3>a web developer and graphic designer</h3>
       </div>
@@ -49,37 +36,44 @@
     </div>
   </section>
 
-  <section>
-    <div target="_blank"  class="contact-info">
-      <div class="contact">
-
-        <a id="profile-link" href="https://github.com/ultrasin" target="_blank" class="btn contact-details">
+<section class="contact-section">
+  <div class="contact-info">
+    
+    <div class="contact" translate="no">
+      <a id="profile-link" href="https://github.com/ultrasin" target="_blank" class="btn contact-details">
         <i class="fab fa-github"></i>
         Github
-        </a>
-      </div>
-      <div class="contact" translate="no">
-        <a href="https://twitter.com/ultra2316" target="_blank" class="btn contact-details">
+      </a>
+    </div>
+
+    <div class="contact" translate="no">
+      <a href="https://twitter.com/ultra2316" target="_blank" class="btn contact-details">
         <i class="fab fa-twitter"></i>
         Twitter
-        </a></div>
+      </a>
+    </div>
 
-  <div class="contact">
-        <a href="mailto:diegocj92@gmail.com" target="_blank" class="btn contact-details">
+    <div class="contact" translate="no">
+      <a href="mailto:diegocj92@gmail.com" target="_blank" class="btn contact-details">
         <i class="fas fa-at"></i>
         Email
-        </a>
-</div>
-
-<div class="contact">
-        <a href="https://www.linkedin.com/in/dcamposj/" target="_blank" class="btn contact-details">
-        Linked<i class="fab fa-linkedin-in"></i>
-        </a>
-</div>
-
-      </div>
+      </a>
     </div>
-  </section>
+
+    <div class="contact" translate="no">
+      <a href="https://www.linkedin.com/in/dcamposj/" target="_blank" class="btn contact-details">
+        Linked <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <div class="contact" translate="no">
+      <a href="https://www.freecodecamp.org" target="_blank" class="btn contact-details">
+        Freecodecamp <i class="fab fa-free-code-camp"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
   
   <footer id="footer">
     <div class="foot"><h6>All rights reserved. 2023.</h6></div>
